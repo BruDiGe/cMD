@@ -1,0 +1,19 @@
+md 100 ps temp = 300., constant P (ntb=2,ntp=1) NO RESTRAINS (ntr=0)
+&cntrl
+ nstlim = 50000, dt = 0.002,
+ ntx = 5, irest = 1,cut=10.0,
+ ntpr = 500, ntwr = 5000, ntwx = 2500,
+ iwrap = 1,
+ tempi = 300., temp0 = 300.,
+ ntt = 3, gamma_ln=1.0,ig=-1,
+ ntb = 2, ntp = 1,
+ ntc = 2, ntf = 2,
+ ntr=0, restraint_wt = 5.0, restraintmask = ":1-194@CA,C,N"
+ nmropt=0,
+ plumed=0,      !Activate PLUMED
+ plumedfile="plumed.dat", !Name of PLUMED file
+ &end
+ &wt
+  type='END',
+ &end
+DISANG=h_bond.rst

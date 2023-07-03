@@ -1,0 +1,13 @@
+Input File Type:         molDynamic
+Receptor Residues:       22   73
+Ligand Residues:         1    22
+Molecular Dynamic Box:   no
+Pdb/Top Name:            system-nowat.prmtop
+crd/mdcrd Name:          system-nowat.mdcrd
+output Name:             system
+Initial Snapshot:        1
+Final Snapshot:          1
+Snapshot Step:           1
+Single Residue Energies: yes
+
+

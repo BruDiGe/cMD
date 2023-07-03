@@ -1,0 +1,18 @@
+eq6 temp = 300, no restraints P=cte (ntb=2, ntp=1) (NPT) 20 ps
+&cntrl
+ nstlim = 50000, dt = 0.002,
+ ntx = 7, irest = 1, iwrap=1, cut = 10.0,
+ ntpr = 500, ntwr = 500, ntwx =500,
+ tempi = 300., temp0 = 300.,
+ ntt = 1,
+ ntb = 2, ntp = 1,
+ ntc = 2, ntf = 2,
+ ntr = 1, restraint_wt = 5, restraintmask = ":1-XXX",
+ nmropt=0,
+ plumed=0,      !Activate PLUMED
+ plumedfile="plumed.dat", !Name of PLUMED file
+ &end
+ &wt
+  type='END',
+ &end
+DISANG=h_bond.rst

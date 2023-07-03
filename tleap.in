@@ -1,0 +1,17 @@
+verbosity 2
+source leaprc.GLYCAM_06j-1
+source leaprc.protein.ff19SB
+source leaprc.gaff2
+source leaprc.water.opc
+#loadamberParams MOL.frcmod
+#loadAmberPrep MOL.prep
+sys = loadPDB system.pdb
+savePDB sys system_vac.pdb
+SaveAmberParm sys system_vac.top system_vac.crd
+#sys = loadPDB system_vac.minTOT.pdb
+#addIons2 sys Na+ 0
+#addIons2 sys Cl- 0
+#SolvateOct sys TIP3PBOX 13
+#savePDB sys system_leap.pdb
+#SaveAmberParm sys system.prmtop system.inpcrd
+quit

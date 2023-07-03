@@ -1,0 +1,10 @@
+Minimizacion de todo el sistema
+ &cntrl
+ ntx = 1, ntrx = 1,
+ ntpr = 500,igb=0,
+ ntf = 1, ntb = 1, 
+ nsnb = 10,           
+ imin = 1, maxcyc = 20000, ncyc = 1000,
+ ntmin = 1, dx0 = 0.1, drms = 0.001,
+ ntp = 0, ntc = 1,cut=10., 
+ &end
