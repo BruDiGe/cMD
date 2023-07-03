@@ -1,0 +1,12 @@
+minimizacion cadenas laterales
+ &cntrl
+   imin   = 1,
+   ntmin  = 2,
+   maxcyc = 10000,
+   ncyc   = 5000,
+   ntb    = 0,
+   igb    = 0,
+   cut    = 12,
+   ibelly = 0,
+ /
+
